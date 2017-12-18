@@ -16,16 +16,16 @@
 
 ## Install
 
-[npm][]:
+[npm]():
 
 ```sh
-npm install ndef-parser
+npm install ndef-formatter
 ```
 
-[yarn][]:
+[yarn]():
 
 ```sh
-yarn add ndef-parser
+yarn add ndef-formatter
 ```
 
 
