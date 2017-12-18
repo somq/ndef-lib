@@ -1,8 +1,43 @@
-# NDEF Library for Proximity APIs (NFC)
-http://andijakl.github.io/ndef-nfc/
+# ndef-formatter
 
-Easily parse and create NDEF records with JavaScript.
+> Easily parse and create NDEF records with JavaScript.
 
+
+#### credits goes to: http://andijakl.github.io/ndef-nfc/
+
+
+## Table of Contents
+
+* [Install](#install)
+* [Usage](#usage)
+* [Original doc](#originaldoc)
+* [License](#license)
+
+
+## Install
+
+[npm][https://www.npmjs.com/]:
+
+```sh
+npm install ndef-parser
+```
+
+[yarn][https://yarnpkg.com/]:
+
+```sh
+yarn add ndef-parser
+```
+
+
+## Usage
+
+A full method list with examples can be found by using:
+```sh
+node node_modules/dist/example
+```
+
+
+## Original doc
 
 # Background - NFC and NDEF
 
@@ -26,9 +61,9 @@ For Windows (Phone) 8, the NFC stack is represented through the Proximity APIs -
 
 # Reusable NDEF classes
 
-* Parse NDEF message & records from raw byte arrays 
-* Extract all information from the bits & bytes contained in the record 
-* Create standard compliant records just by providing your data 
+* Parse NDEF message & records from raw byte arrays
+* Extract all information from the bits & bytes contained in the record
+* Create standard compliant records just by providing your data
 * Identify the exact record type when reading an NDEF message
 * Records check their contents for validity according to standards
 * Can throw NdefException in case of content validity issues, with translatable messages defined in a resource file
@@ -42,8 +77,8 @@ For Windows (Phone) 8, the NFC stack is represented through the Proximity APIs -
 	* Android Application Record (AAR): launch an Android app
 
 * Convenience classes extending the basic URI class for common use case scenarios:
-	* Geo: longitude & latitude of a place, using different Geo URI schemes (more details) 
-	* Social: linking to social networks like Twitter, Facebook, Foursquare or Skype 
+	* Geo: longitude & latitude of a place, using different Geo URI schemes (more details)
+	* Social: linking to social networks like Twitter, Facebook, Foursquare or Skype
 	* Telephone call: defining the number to call
 
 
@@ -51,7 +86,7 @@ For Windows (Phone) 8, the NFC stack is represented through the Proximity APIs -
 
 ## Create a URI Record:
 
-``` 
+```
 // Create NDEF Message
 var ndefMessage = new NdefLibrary.NdefMessage();
 // Create NDEF Uri Record
@@ -62,12 +97,12 @@ ndefUriRecord.setUri("https://www.mobilefactory.at");
 ndefMessage.push(ndefUriRecord);
 // Get byte array for NFC tag
 var byteArray = ndefMessage.toByteArray();
-``` 
+```
 
 
 ## Create a raw NDEF Message by defined input:
 
-``` 
+```
 var recordType = new Array(1,3,1,3,5,6,7);
 var recordPayload = new Array(1,2,1);
 var id = new Array(3,3);
@@ -78,14 +113,14 @@ ndefRecord2.setId(id);
 var ndefMessage = new NdefLibrary.NdefMessage();
 ndefMessage.push(ndefRecord2);
 var byteArray = ndefMessage.toByteArray();
-``` 
+```
 
 
 ## Create a raw NDEF Message by byte array from NFC tag:
 
-``` 
+```
 var ndefMessage = NdefLibrary.NdefMessage.fromByteArray(byteArray);
-``` 
+```
 
 
 # Building the library on Windows
@@ -119,6 +154,8 @@ Known issues and limitations:
 ## 0.0.1 - March 2014
 * Initial Version
 
+
+## License
 
 # Related Information
 
