@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "svn",
-    "url": "https://github.com/somq/ndef-library"
+    "url": "https://github.com/somq/ndef-formatter"
   },
   "devDependencies": {
     "grunt": "~1.0.1",
