@@ -1,6 +1,6 @@
 {
   "name": "ndef-formatter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NDEF Library for NFC",
   "directories": {
     "test": "test",
