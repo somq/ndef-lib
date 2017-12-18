@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "svn",
-    "url": "https://ndef.svn.codeplex.com/svn"
+    "url": "https://github.com/somq/ndef-library"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
