@@ -1,6 +1,6 @@
 # ndef-formatter
 
-> Easily parse and create NDEF records with JavaScript.
+> Easily parse and create NDEF records.
 
 
 #### credits goes to: http://andijakl.github.io/ndef-nfc/
