@@ -1,5 +1,5 @@
 {
-  "name": "lib-ndeflibrary",
+  "name": "ndef-library",
   "version": "0.0.1",
   "description": "NDEF Library for NFC",
   "directories": {
