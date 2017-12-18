@@ -1,4 +1,4 @@
-let ndefLibrary = require('./dist/ndef-formatter');
+let ndefLibrary = require('./dist/ndef-lib');
 
 
 // /**
@@ -54,7 +54,7 @@ console.log('text:', ndefTextRecord.getText(), ndefTextRecord.getLanguageCode())
 
 /**
  * Social
- * 
+ *
  * social types:
  		Twitter: 0,
 		LinkedIn: 1,
@@ -105,7 +105,7 @@ console.log('tel:', ndefTelRecord.getTelNumber(), ndefTelRecord.getUri())
 
 /**
  * ndef message
- * 
+ *
  * misc funcs:
  *  length - number of record in the message
  *  getRecords - get _records
@@ -125,13 +125,13 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 
 /**
  * TODO to write a tag
- * 
+ *
  * index 12  -> E1    - ndef format
  * index 16  -> 03    - ndef message type
  * index 17  -> xx    - ndef message length
  * index 18+ -> D1... - ndef message
  * index xx  -> FE    - terminator
- * 
+ *
  */
 
 
@@ -152,7 +152,7 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 
 
 /**
- * ---------------------------------  ---------------------------------  ---------------------------------  ---------------------------------  
+ * ---------------------------------  ---------------------------------  ---------------------------------  ---------------------------------
  */
 
 
@@ -173,18 +173,18 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 	* Geo tags are not standardized by the NFC forum, therefore,
 	* this class supports three different types of writing the location
 	* to a tag.
-	* 
+	*
 	* * GeoUri: write URI based on the "geo:" URI scheme, as specified
 	* by RFC5870, available at: http://geouri.org/
-	* 
+	*
 	* * BingMaps: Uses the URI scheme defined by the Maps application
 	* on Windows 8.
-	* 
+	*
 	* * DriveTo / WalkTo: URI schemes supported by Windows Phone 8 and
 	* used in apps to launch an installed navigation app to navigate
 	* to a specified position. An app to handle DriveTo request should
 	* be present by default on all WP8 phones; WalkTo not necessarily.
-	* 
+	*
 	* * NokiaMapsUri: write URI based on a Nokia Maps link, following the
 	* "http://m.ovi.me/?c=..." scheme of the Nokia/Ovi Maps Rendering API.
 	* Depending on the target device, the phone / web service should then
@@ -192,7 +192,7 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 	* On Symbian, the phone will launch the Nokia Maps client. On a
 	* desktop computer, the full Nokia Maps web experience will open.
 	* On other phones, the HTML 5 client may be available.
-	* 
+	*
 	* * WebRedirect: uses the web service at NfcInteractor.com to
 	* check the OS of the phone, and then redirect to the best way
 	* of showing maps to the user.
@@ -200,12 +200,12 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 	* real world deployment, outside of development and testing, it's
 	* recommended to host the script on your own web server.
 	* Find more information at nfcinteractor.com.
-	* 
+	*
 	* As this class is based on the Smart URI base class, the
 	* payload is formatted as a URI record initially. When first
 	* adding Smart Poster information (like a title), the payload
   * instantly transforms into a Smart Poster.
-  
+
  * Geo types:
     GeoUri: 0 - Geo URI scheme, as defined in RFC 5870 (http://tools.ietf.org/html/rfc5870).
     BingMaps: 1 - Bing Maps URI scheme, used for Maps on Windows 8 (http://msdn.microsoft.com/en-us/library/windows/apps/jj635237.aspx)
@@ -218,7 +218,7 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 
 /**
  * Social record
- * 
+ *
  	/// <summary>
 	/// Link to one of the supported social networks by
 	/// simply selecting the network and specifying the username.
@@ -227,7 +227,7 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
 	/// Tapping a tag written with this record type will take
 	/// the user to the social network web site, where he can then
 	/// for example start following you on Twitter.
-	/// 
+	///
 	/// As this class is based on the Smart URI base class, the
 	/// payload is formatted as a URI record initially. When first
 	/// adding Smart Poster information (like a title), the payload
@@ -246,10 +246,10 @@ console.log(Buffer.from(ndefMessage.toByteArray()).length) // index 14
     /// Through specifying the package name, this record directly launches an
     /// app on an Android phone (4.0+). If the app isn't installed on the phone,
     /// it will open the store and search for the app.
-    /// 
+    ///
     /// To pass custom data to the app, you would typically add other records
     /// to the NDEF message.
-    /// 
+    ///
     /// If creating a multi-record NDEF message, it's recommended to put this
     /// record to the end of the message.
     /// </remarks>

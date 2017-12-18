@@ -1,5 +1,5 @@
 {
-  "name": "ndef-formatter",
+  "name": "ndef-lib",
   "version": "0.0.5",
   "description": "NDEF Library for NFC",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "svn",
-    "url": "https://github.com/somq/ndef-formatter"
+    "url": "https://github.com/somq/ndef-lib"
   },
   "devDependencies": {
     "grunt": "~1.0.1",

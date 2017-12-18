@@ -1,4 +1,4 @@
-# ndef-formatter
+# ndef-lib
 
 > Easily parse and create NDEF records.
 
@@ -19,13 +19,13 @@
 [npm](https://www.npmjs.com/):
 
 ```sh
-npm install ndef-formatter
+npm install ndef-lib
 ```
 
 [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add ndef-formatter
+yarn add ndef-lib
 ```
 
 
@@ -34,7 +34,7 @@ yarn add ndef-formatter
 Example:
 
 ```sh
-node node_modules/ndef-formatter/example.js
+node node_modules/ndef-lib/example.js
 ```
 ### Methods list:
 #### Create and parse:
