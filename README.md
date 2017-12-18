@@ -16,13 +16,13 @@
 
 ## Install
 
-[npm]():
+[npm](https://www.npmjs.com/):
 
 ```sh
 npm install ndef-formatter
 ```
 
-[yarn]():
+[yarn](https://yarnpkg.com/):
 
 ```sh
 yarn add ndef-formatter
@@ -31,10 +31,21 @@ yarn add ndef-formatter
 
 ## Usage
 
-A full method list with examples can be found by using:
+Example:
+
 ```sh
-node node_modules/dist/example
+node node_modules/ndef-formatter/example.js
 ```
+### Methods list:
+#### Create and parse:
+* uri record
+* text record
+* smartposter - geolocation record
+* social record
+* Android App record
+* Tel record
+
+* ndef message
 
 
 ## Original doc
