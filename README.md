@@ -16,13 +16,13 @@
 
 ## Install
 
-[npm][https://www.npmjs.com/]:
+[npm][]:
 
 ```sh
 npm install ndef-parser
 ```
 
-[yarn][https://yarnpkg.com/]:
+[yarn][]:
 
 ```sh
 yarn add ndef-parser
