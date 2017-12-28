@@ -3,7 +3,7 @@
 > Easily parse and create NDEF records.
 
 
-#### credits goes to: http://andijakl.github.io/ndef-nfc/
+#### http://andijakl.github.io/ndef-nfc/ wrapping in a npm module
 
 
 ## Table of Contents
@@ -38,12 +38,13 @@ node node_modules/ndef-lib/example.js
 ```
 ### Methods list:
 #### Create and parse:
-* uri record
 * text record
-* smartposter - geolocation record
-* social record
+* uri record
+* geolocation record (uri)
+* social record (uri)
+* Tel record (uri)
 * Android App record
-* Tel record
+
 
 * ndef message
 
