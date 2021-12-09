@@ -1,4 +1,4 @@
-/*! lib-ndeflibrary - v1.0.0 - 2017-12-17 - Sebastian Höbarth / Andreas Jakl */
+/*! ndef-lib - v0.1.0 - 2021-12-09 - Sebastian Höbarth / Andreas Jakl / somq */
 ;(function (global) {
 
 /****************************************************************************
@@ -2025,7 +2025,6 @@ var initNdefLibrary = function (context) {
 
 
 if (typeof define === 'function' && define.amd) {
-    
     // Expose Library as an AMD module if it's loaded with RequireJS or
     // similar.
     define(function () {
@@ -2036,4 +2035,5 @@ if (typeof define === 'function' && define.amd) {
     // loader.
     initNdefLibrary(this);
 }
+
 } (this));
