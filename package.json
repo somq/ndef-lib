@@ -11,14 +11,14 @@
     "url": "https://github.com/somq/ndef-lib"
   },
   "devDependencies": {
-    "grunt": "~1.0.1",
+    "grunt": "~1.4.1",
     "grunt-contrib-jshint": "~2.0.0",
     "grunt-contrib-qunit": "~3.0.1",
     "grunt-contrib-concat": "~1.0.1",
     "grunt-contrib-uglify": "~4.0.0"
   },
-  "author": "Sebastian Höbarth / Andreas Jakl",
+  "author": "Sebastian Höbarth / Andreas Jakl / somq",
   "dependencies": {
-    "requirejs": "^2.3.5"
+    "requirejs": "^2.3.6"
   }
 }
