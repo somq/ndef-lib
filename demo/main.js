@@ -1,6 +1,6 @@
 const NdefLibrary = require("ndef-lib");
-// Create NDEF Message
 
+// Create NDEF Message
 var ndefMessage = new NdefLibrary.NdefMessage();
 // Create NDEF Uri Record
 var ndefUriRecord = new NdefLibrary.NdefUriRecord();
